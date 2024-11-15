@@ -1,0 +1,224 @@
+body {
+    background: linear-gradient(135deg, #d5e4ff, #f3e6ff);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid #b0aaff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #b0aaff;
+}
+
+.header h1 {
+    font-size: 20px;
+    color: #6d5eff;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #6d5eff;
+    border: 1px solid #b0aaff;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6e1ff;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    color: #6d5eff;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.track-box {
+    background-color: #e6e1ff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    display: inline-block;
+    color: #6d5eff;
+}
+
+.track-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.track-box ul {
+    list-style: none;
+}
+
+.track-box li {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.image-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.footer {
+    padding: 15px 20px;
+    text-align: center;
+    border-top: 2px solid #b0aaff;
+    font-size: 14px;
+    color: #6d5eff;
+    margin-top: 20px;
+    background-color: #f3e6ff;
+}
+
+
+/* Modal Background */
+
+#loginModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker overlay */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    /* Light background */
+    margin: auto;
+    /* Center the modal */
+    padding: 30px;
+    /* Padding for content */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+    width: 80%;
+    /* Set width */
+    max-width: 500px;
+    /* Maximum width */
+    animation: slideIn 0.4s ease-out;
+    /* Slide-in animation */
+}
+
+
+/* Close Button */
+
+.close {
+    color: #aaa;
+    /* Default color */
+    float: right;
+    /* Align to right */
+    font-size: 28px;
+    /* Font size */
+    font-weight: bold;
+    /* Font weight */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    /* Darker color on hover */
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+
+/* Modal Title */
+
+#modalTitle {
+    font-family: 'Bebas Neue', cursive;
+    /* Font family */
+    font-size: 28px;
+    /* Font size */
+    color: #333;
+    /* Dark color */
+    text-align: center;
+    /* Center text */
+    margin-bottom: 15px;
+    /* Space below */
+}
+
+
+/* Modal Message */
+
+#modalMessage {
+    font-family: 'Figtree', sans-serif;
+    /* Font family */
+    font-size: 16px;
+    /* Font size */
+    color: #555;
+    /* Text color */
+    text-align: center;
+    /* Center text */
+    line-height: 1.5;
+    /* Line height */
+}
+
+
+/* Keyframe for slide-in animation */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
